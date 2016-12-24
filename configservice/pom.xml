@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<reservationName>config-service</reservationName>
+	<name>config-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -61,7 +61,7 @@
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>
-			<reservationName>Spring Snapshots</reservationName>
+			<name>Spring Snapshots</name>
 			<url>https://repo.spring.io/snapshot</url>
 			<snapshots>
 				<enabled>true</enabled>
@@ -69,7 +69,7 @@
 		</repository>
 		<repository>
 			<id>spring-milestones</id>
-			<reservationName>Spring Milestones</reservationName>
+			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 			<snapshots>
 				<enabled>false</enabled>

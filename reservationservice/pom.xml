@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<reservationName>reservation-service</reservationName>
+	<name>reservation-service</name>
 	<description>Reservation service</description>
 
 	<parent>
@@ -59,6 +59,16 @@
 			<!--<artifactId>spring-boot-starter-data-redis</artifactId>-->
 		<!--</dependency>-->
 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream</artifactId>
+			<version>1.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+			<version>1.1.1.RELEASE</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
@@ -107,7 +117,7 @@
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>
-			<reservationName>Spring Snapshots</reservationName>
+			<name>Spring Snapshots</name>
 			<url>https://repo.spring.io/snapshot</url>
 			<snapshots>
 				<enabled>true</enabled>
@@ -115,7 +125,7 @@
 		</repository>
 		<repository>
 			<id>spring-milestones</id>
-			<reservationName>Spring Milestones</reservationName>
+			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 			<snapshots>
 				<enabled>false</enabled>
