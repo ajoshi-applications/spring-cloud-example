@@ -1,7 +1,6 @@
 package com.example.configuration;
 
 import org.springframework.cloud.sleuth.Sampler;
-import org.springframework.cloud.sleuth.Span;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,11 +11,6 @@ import org.springframework.context.annotation.Configuration;
 public class ZipkinConfiguration {
     @Bean
     Sampler sampler() {
-        return new Sampler() {
-            @Override
-            public boolean isSampled(Span span) {
-                return true;
-            }
-        };
+        return span -> true;
     }
 }
